@@ -3,7 +3,7 @@ import {
   BannerTitulo,
   BannerTexto,
   BannerPesquisa,
-} from "./styles";
+} from './styles';
 
 const Banner = () => {
   return (

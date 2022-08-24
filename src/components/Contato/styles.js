@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import email from "../../assets/Email.svg";
+import styled from 'styled-components';
+import email from '../../assets/Email.svg';
 
 export const ContainerContato = styled.section`
   background: #ffffff;

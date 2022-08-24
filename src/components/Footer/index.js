@@ -1,4 +1,4 @@
-import { ContainerFooter, FooterTitulo } from "./styles";
+import { ContainerFooter, FooterTitulo } from './styles';
 
 const Footer = () => {
   return (

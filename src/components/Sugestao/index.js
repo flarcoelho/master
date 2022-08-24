@@ -11,9 +11,9 @@ import {
   Botoes,
   BotoesItem,
   BotaoStyled,
-} from "./styles";
-import Favoritos from "../../assets/Favoritos.svg";
-import Compras from "../../assets/Compras.svg";
+} from './styles';
+import Favoritos from '../../assets/Favoritos.svg';
+import Compras from '../../assets/Compras.svg';
 
 const Sugestao = (props) => {
   const { descTexto, descTitulo, descTituloLivro, imgPrincipal, imgEstrelas } =

@@ -3,7 +3,7 @@ import {
   ListaMenuTitulo,
   ListaMenuItem,
   ButtonItemMenu,
-} from "./styles";
+} from './styles';
 
 const Menu = () => {
   return (

@@ -1,19 +1,20 @@
-import { Container, Linha } from "./styles";
-import Banner from "../../components/Banner";
-import Header from "../../components/Header";
-import Carrossel from "../../components/Carrossel";
-import Sugestao from "../../components/Sugestao";
-import Topicos from "../../components/Topicos";
-import Angular from "../../assets/Perfil-escritora.svg";
-import Escritora from "../../assets/Escritora.svg";
-import Estrelas from "../../assets/Estrelinhas.svg";
-import Contato from "../../components/Contato";
-import Footer from "../../components/Footer";
+import { Container, Linha, ContainerFixed } from './styles';
+import Banner from '../../components/Banner';
+import Header from '../../components/Header';
+import Carrossel from '../../components/Carrossel';
+import Sugestao from '../../components/Sugestao';
+import Topicos from '../../components/Topicos';
+import Angular from '../../assets/Perfil-escritora.svg';
+import Escritora from '../../assets/Escritora.svg';
+import Estrelas from '../../assets/Estrelinhas.svg';
+import Contato from '../../components/Contato';
+import Footer from '../../components/Footer';
 
 const Home = () => {
   return (
     <Container>
       <Header />
+      {/*  <ContainerFixed> */}
       <Banner />
       <Carrossel titulo="Últimos Lançamentos" />
       <Sugestao
@@ -36,6 +37,7 @@ const Home = () => {
       <Contato />
       <Linha />
       <Footer />
+      {/* </ContainerFixed> */}
     </Container>
   );
 };

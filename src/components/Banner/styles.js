@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import vector from "../../assets/Vector.svg";
+import styled from 'styled-components';
+import vector from '../../assets/Vector.svg';
 
 export const ContainerBanner = styled.section`
   background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   opacity: 0.75;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: #ffffff;
   padding: 2.5em 2em;
@@ -33,7 +33,7 @@ export const BannerPesquisa = styled.input`
   width: 100%;
 
   ::placeholder {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     color: #ffffff;
     text-align: center;

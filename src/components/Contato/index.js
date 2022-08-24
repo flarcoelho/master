@@ -3,9 +3,10 @@ import {
   ContatoTitulo,
   ContatoTexto,
   ContatoPesquisa,
-} from "./styles";
+} from './styles';
 
 const Contato = () => {
+  const TESTE = '';
   return (
     <ContainerContato>
       <ContatoTitulo>Fique por dentro das novidades!</ContatoTitulo>

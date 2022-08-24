@@ -4,7 +4,7 @@ import {
   TopicosLista,
   TopicosItem,
   BotaoStyled,
-} from "./styles";
+} from './styles';
 
 const Topicos = () => {
   return (
