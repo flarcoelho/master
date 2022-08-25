@@ -18,6 +18,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/prop-types":0,
     "react/react-in-jsx-scope": "off",
     "indent": 0,
     "@typescript-eslint/no-explicit-any": 0,

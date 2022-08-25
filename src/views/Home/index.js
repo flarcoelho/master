@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <Container>
       <Header />
-      {/*  <ContainerFixed> */}
+
       <Banner />
       <Carrossel titulo="Últimos Lançamentos" />
       <Sugestao
@@ -37,7 +37,6 @@ const Home = () => {
       <Contato />
       <Linha />
       <Footer />
-      {/* </ContainerFixed> */}
     </Container>
   );
 };

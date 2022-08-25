@@ -2,7 +2,13 @@ import styled from 'styled-components';
 
 export const ListaMenu = styled.ul`
   width: 60vw;
-  position: relative;
+  position: absolute;
+  top: 100%;
+  display: block;
+
+  @media screen and (min-width: 1024px) {
+    width: auto;
+  }
 `;
 
 export const ListaMenuTitulo = styled.li`
@@ -17,13 +23,19 @@ export const ListaMenuTitulo = styled.li`
   display: block;
   @media screen and (min-width: 1024px) {
     display: none;
-    display: flex;
+  }
+  :hover {
+    background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    color: #ffffff;
   }
 `;
 
 export const ListaMenuItem = styled.li`
   padding: 1em;
   background: #ffffff;
+  :hover {
+    background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  }
 `;
 
 export const ButtonItemMenu = styled.button`

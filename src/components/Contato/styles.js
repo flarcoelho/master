@@ -3,9 +3,22 @@ import email from '../../assets/Email.svg';
 
 export const ContainerContato = styled.section`
   background: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   padding: 2.5em 2em;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const ContatoDescricao = styled.div`
+  @media screen and (min-width: 1024px) {
+    width: 30%;
+    font-size: 24px;
+  }
+  margin-right: 1em;
 `;
 
 export const ContatoTitulo = styled.h2`
@@ -40,12 +53,16 @@ export const ContatoPesquisa = styled.input`
   background-clip: text;
 
   ::placeholder {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
     background: url(${email}) no-repeat;
-    background-position: 1em;
+    background-position: 7em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 30%;
   }
 `;

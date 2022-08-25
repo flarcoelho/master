@@ -3,7 +3,6 @@ import vector from '../../assets/Vector.svg';
 
 export const ContainerBanner = styled.section`
   background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-  opacity: 0.75;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: #ffffff;
@@ -15,6 +14,10 @@ export const ContainerBanner = styled.section`
 export const BannerTitulo = styled.h2`
   font-weight: 700;
   font-size: 18px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+  }
 `;
 
 export const BannerTexto = styled.p`
@@ -40,6 +43,10 @@ export const BannerPesquisa = styled.input`
     font-weight: 400;
     font-size: 14px;
     background: url(${vector}) no-repeat;
-    background-position: 1em;
+    background-position: 8em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 50%;
   }
 `;

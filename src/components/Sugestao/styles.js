@@ -8,6 +8,10 @@ export const Card = styled.div`
   border-radius: 10px;
   margin: 1em;
   padding: 1em;
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+    margin: 2em auto;
+  }
 `;
 
 export const CardDescricao = styled.div`
@@ -17,7 +21,7 @@ export const CardDescricao = styled.div`
 `;
 
 export const Descricao = styled.div`
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 `;
 
@@ -69,7 +73,7 @@ export const BotaoStyled = styled.button`
   border-top: 0px;
   border-left: 0px;
   /* Propiedades da font */
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;

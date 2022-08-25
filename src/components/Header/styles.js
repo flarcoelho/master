@@ -5,6 +5,7 @@ export const Cabecalho = styled.header`
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
+  position: relative;
 `;
 
 export const Container = styled.nav`

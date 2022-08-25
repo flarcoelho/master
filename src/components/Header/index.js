@@ -20,21 +20,25 @@ import Menu from '../Menu';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showCategorias, setShowCategorias] = useState(false);
 
-  const onMouseEnter = () => {
-    setShowMenu(true);
+  const onClickMenu = () => {
+    setShowMenu(!showMenu);
+    setShowCategorias(false);
   };
-
-  const onMouseLeave = () => {
+  const onClickCategoria = () => {
+    setShowCategorias(!showCategorias);
     setShowMenu(false);
   };
+
   return (
     <>
       <Cabecalho>
         <Container>
-          <ButtonMenu onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+          <ButtonMenu onClick={onClickMenu}>
             <ImageMenu src={MenuImg} alt="Menu" />
           </ButtonMenu>
+          {showMenu && <Menu />}
           <a href="#">
             <ContainerImage src={Logo} alt="Logo Alurabooks" />
           </a>
@@ -42,15 +46,14 @@ const Header = () => {
             <ContainerTituloNegrito>Alura </ContainerTituloNegrito> Books
           </ContainerTitulo>
         </Container>
+
         <OpcoesMenu>
           <OpcoesItem>
-            <ButtonMenuCategorias
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-            >
+            <ButtonMenuCategorias onClick={onClickCategoria}>
               Categorias
             </ButtonMenuCategorias>
           </OpcoesItem>
+          {showCategorias && <Menu />}
           <OpcoesItem>Favoritos</OpcoesItem>
           <OpcoesItem>Minha Estante</OpcoesItem>
         </OpcoesMenu>
@@ -67,7 +70,6 @@ const Header = () => {
           </a>
         </Container>
       </Cabecalho>
-      {showMenu && <Menu />}
     </>
   );
 };

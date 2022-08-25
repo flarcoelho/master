@@ -4,8 +4,8 @@ import {
   ImageSwiper,
   SwiperStyled,
 } from './styles';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
 import Javascript from '../../assets/Javascript.svg';
 import Tuning from '../../assets/Tuning.svg';
 import Portugol from '../../assets/Portugol.svg';
@@ -17,7 +17,7 @@ import Gestao2 from '../../assets/Gestao2.svg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import 'swiper/css/navigation';
 const Carrossel = (props) => {
   const { titulo } = props;
 
@@ -25,11 +25,12 @@ const Carrossel = (props) => {
     <ContainerCarrosel>
       <CarrosselTitulo>{titulo}</CarrosselTitulo>
       <SwiperStyled
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         spaceBetween={10}
         slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         pagination={{ clickable: true }}
+        navigation={true}
       >
         <SwiperSlide>
           <ImageSwiper src={Javascript} />
