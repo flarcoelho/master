@@ -11,6 +11,10 @@ export const ContainerContato = styled.section`
     justify-content: center;
     align-items: center;
   }
+
+  @media screen and (min-width: 1728px) {
+    padding: 3em 25vw;
+  }
 `;
 
 export const ContatoDescricao = styled.div`
@@ -60,6 +64,10 @@ export const ContatoPesquisa = styled.input`
     font-size: 14px;
     background: url(${email}) no-repeat;
     background-position: 7em;
+
+    @media screen and (min-width: 1728px) {
+      background-position: 4em;
+    }
   }
 
   @media screen and (min-width: 1024px) {

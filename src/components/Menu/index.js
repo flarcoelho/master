@@ -2,7 +2,7 @@ import {
   ListaMenu,
   ListaMenuTitulo,
   ListaMenuItem,
-  ButtonItemMenu,
+  LinkMenuItem,
 } from './styles';
 
 const Menu = () => {
@@ -10,19 +10,19 @@ const Menu = () => {
     <ListaMenu>
       <ListaMenuTitulo>Categorias</ListaMenuTitulo>
       <ListaMenuItem>
-        <ButtonItemMenu>PROGRAMAÇÃO</ButtonItemMenu>
+        <LinkMenuItem href="#">PROGRAMAÇÃO</LinkMenuItem>
       </ListaMenuItem>
       <ListaMenuItem>
-        <ButtonItemMenu>FRONT-END</ButtonItemMenu>
+        <LinkMenuItem href="#">FRONT-END</LinkMenuItem>
       </ListaMenuItem>
       <ListaMenuItem>
-        <ButtonItemMenu>INFRAESTRUTURA</ButtonItemMenu>
+        <LinkMenuItem href="#">INFRAESTRUTURA</LinkMenuItem>
       </ListaMenuItem>
       <ListaMenuItem>
-        <ButtonItemMenu>BUSSINESS</ButtonItemMenu>
+        <LinkMenuItem href="#">BUSSINESS</LinkMenuItem>
       </ListaMenuItem>
       <ListaMenuItem>
-        <ButtonItemMenu>DESIGN / UX</ButtonItemMenu>
+        <LinkMenuItem href="#">DESIGN / UX</LinkMenuItem>
       </ListaMenuItem>
     </ListaMenu>
   );

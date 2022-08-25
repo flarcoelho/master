@@ -9,6 +9,10 @@ export const ContainerBanner = styled.section`
   padding: 2.5em 2em;
   color: #ffffff;
   text-align: center;
+
+  @media screen and (min-width: 1728px) {
+    padding: 5em 0;
+  }
 `;
 
 export const BannerTitulo = styled.h2`
@@ -44,9 +48,16 @@ export const BannerPesquisa = styled.input`
     font-size: 14px;
     background: url(${vector}) no-repeat;
     background-position: 8em;
+    @media screen and (min-width: 1728px) {
+      background-position: 15em;
+    }
   }
 
   @media screen and (min-width: 1024px) {
     width: 50%;
+  }
+
+  @media screen and (min-width: 1728px) {
+    width: 38%;
   }
 `;

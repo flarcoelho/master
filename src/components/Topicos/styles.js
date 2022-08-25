@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import vector from '../../assets/Vector.svg';
 
 export const ContainerTopicos = styled.section`
   background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
@@ -10,6 +9,10 @@ export const ContainerTopicos = styled.section`
   padding: 2.5em;
   color: #ffffff;
   text-align: center;
+
+  @media screen and (min-width: 1728px) {
+    padding: 3em 35vw;
+  }
 `;
 
 export const TopicosTitulo = styled.h2`

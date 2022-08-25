@@ -3,6 +3,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const ContainerCarrosel = styled.section``;
 
+export const ContainerCarosselSug = styled.div`
+  @media screen and (min-width: 1728px) {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 1728px) {
+      padding: 0 20vw;
+    }
+  }
+`;
+
 export const CarrosselTitulo = styled.h2`
   font-weight: 700;
   font-size: 18px;
@@ -17,6 +27,10 @@ export const CarrosselTitulo = styled.h2`
   @media screen and (min-width: 1024px) {
     font-size: 26px;
   }
+
+  @media screen and (min-width: 1728px) {
+    font-size: 32px;
+  }
 `;
 
 export const ImageSwiper = styled.img`
@@ -29,14 +43,22 @@ export const SwiperStyled = styled(Swiper)`
   display: flex;
   flex-direction: column-reverse;
   @media screen and (min-width: 1024px) {
-    width: 60%;
+    width: 70%;
   }
+
+  @media screen and (min-width: 1728px) {
+    width: 50%;
+  }
+
   .swiper-pagination {
     position: inherit;
     margin-top: 0.5em;
 
     @media screen and (min-width: 1024px) {
       margin: 2em 0 3em 0;
+    }
+    @media screen and (min-width: 1728px) {
+      margin: 1em 0;
     }
   }
 

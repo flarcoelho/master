@@ -10,12 +10,14 @@ import {
   OpcoesMenu,
   OpcoesItem,
   ButtonMenuCategorias,
+  LinkItem,
+  Texto,
+  ConatinerLink,
 } from './styles';
 import Logo from '../../assets/Logo.svg';
 import Favoritos from '../../assets/Favoritos.svg';
 import Compras from '../../assets/Compras.svg';
 import Usuario from '../../assets/Usuario.svg';
-import MenuImg from '../../assets/Menu.svg';
 import Menu from '../Menu';
 
 const Header = () => {
@@ -35,9 +37,8 @@ const Header = () => {
     <>
       <Cabecalho>
         <Container>
-          <ButtonMenu onClick={onClickMenu}>
-            <ImageMenu src={MenuImg} alt="Menu" />
-          </ButtonMenu>
+          <ButtonMenu onClick={onClickMenu} />
+
           {showMenu && <Menu />}
           <a href="#">
             <ContainerImage src={Logo} alt="Logo Alurabooks" />
@@ -59,15 +60,17 @@ const Header = () => {
         </OpcoesMenu>
 
         <Container>
-          <a href="#">
+          <LinkItem href="#">
             <ContainerImage src={Favoritos} alt="Meus Favoritos" />
-          </a>
-          <a href="#">
+          </LinkItem>
+          <ConatinerLink href="#">
             <ContainerImage src={Compras} alt="Carrinho de Compras" />
-          </a>
-          <a href="#">
+            <Texto>Minha Sacola</Texto>
+          </ConatinerLink>
+          <ConatinerLink href="#">
             <ContainerImage src={Usuario} alt="Meu Perfil" />
-          </a>
+            <Texto>Meu Perfil</Texto>
+          </ConatinerLink>
         </Container>
       </Cabecalho>
     </>

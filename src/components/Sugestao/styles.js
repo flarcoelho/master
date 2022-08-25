@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerSugestao = styled.section``;
+export const ContainerSugestao = styled.div``;
 
 export const Card = styled.div`
   background: #ffffff;
@@ -11,6 +11,9 @@ export const Card = styled.div`
   @media screen and (min-width: 1024px) {
     width: 40%;
     margin: 2em auto;
+  }
+  @media screen and (min-width: 1728px) {
+    width: 80%;
   }
 `;
 
@@ -29,6 +32,14 @@ export const DescricaoTitulo = styled.h3`
   color: #eb9b00;
   font-weight: 700;
   font-size: 16px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1728px) {
+    font-size: 32px;
+  }
 `;
 
 export const DescricaoTituloLivro = styled.h2`
@@ -43,6 +54,9 @@ export const DescricaoTexto = styled.p`
   font-weight: 400;
   font-size: 14px;
   margin: 0 0.5em 0 0;
+  @media screen and (min-width: 1728px) {
+    font-size: 16px;
+  }
 `;
 
 export const DescricaoImagem = styled.img``;

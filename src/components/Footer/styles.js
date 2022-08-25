@@ -31,6 +31,11 @@ export const ListaRodape = styled.ul`
   @media screen and (min-width: 1024px) {
     display: block;
   }
+
+  @media screen and (min-width: 1728px) {
+    border-left: 1px solid #858585;
+    padding-left: 1em;
+  }
 `;
 
 export const ListaRodapeTitulo = styled.li`
